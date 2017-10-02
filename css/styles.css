@@ -1,170 +1,59 @@
-html {
-	overflow-y: scroll;
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
-body {
-	font-family: "Helvetical Neue", Helvetica, Arial, sans-serif;
-	font-size: 100%;
-	line-height: 1.7em;
-	color: #000000;
+html{
+	padding: 0;
+
 }
 
-#container {
-	width: 70%;
-	margin: 10px auto;
-	border: 1px solid gray;
+.bgimg {
+    /* Background image */
+    background-image: url("../images/bg.png");
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Helvetic Neue", Helvetica, sans-serif;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+    padding: 0
 }
 
-#top_row {
-	border-bottom: 1px dotted #cccccc;
-	padding: .5em .5em 3em .5em;
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
 }
 
-#top_row h1{
-	color: #F28C06;
-	font-size: 3.75em;
-	letter-spacing: -2px;
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
 }
 
-#top_row h3{
-	font-size:1.125em;
-	font-weight: 200;
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#top_row nav{
-	float:right;
-}
-
-#top_row nav a.selected {
-	background: #f6f6f6;
-	color: #d3d3d3;
-}
-
-#top_row nav a.selected:hover {
-	background: #f6f6f6;
-	color: #bbbbbb;
-}
-
-#top_row nav a:hover {
-	background: #f6f6f6;
-	color: #F28C06;
-}
-
-#content {
-	float: left;
-	width: 70%;
-	margin: 0;
-	padding: 1em;
-	border-right: 1px dotted #ccc;
-}
-
-#content h3{
-	font-family: Georgia, serif;
-	font-size: 1.5em;
-	margin: 30px 0 10px 0;
-	font-weight: normal;
-}
-
-#sidebar {
-	float:left;
-	padding: 1em;
-	font-size: .875em;
-}
-
-#sidebar a {
-	color:#000000;
-	text-decoration: none;
-}
-
-#sidebar a:hover {
-	color:#F28C06;
-	text-decoration: underline;
-}
-
-#sidebar h3 {
-	font-size: 1.125em;
-	border-bottom: 1px dotted #ccc;
-}
-
-footer {
-	clear:both;
-	margin:0;
-	padding:.5em;
-	color:#333333;
-	font-variant: small-caps;
-	font-size: .813em;
-	text-align: center;
-}
-
-#content img {
-	float:left;
-	margin:1em;
-}
-
-#bio {
-	margin-left: 3em;
-	font-size: .875em;
-}
-
-#bio a {
-	text-decoration: none;
-	border-bottom: 1px dotted #000;
-	color: #000;
-}
-
-#bio a:hover {
-	color: #ca1e00;
-}
-
-table {
-   margin-left:auto; 
-   margin-right:auto;
-   width: 75%;
-   border-style: solid;
-   border-width: 3px;
-   border-spacing: 3px;
-   object-fit: contain;
-   border-collapse: collapse;
-   border-color: #8A2801;
-}
-
-th {
-	height:40px;
-	font-weight: bold;
-}
-
-th,td {
-	padding:2px;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #333333;
-}
-
-form {
-	width:75%;
-	margin-left:auto; 
-   	margin-right:auto;
-   	border-style: solid;
-   	border-width: 1px;
-   	border-color: #8A2801;
-   	border-spacing: 10px;
-    font-weight: bold;
-}
-
-legend {
-	color:#666666;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 5px;
-}
-
-label {
-	font-weight: bold;
-	text-align: center;
-}
-
-iframe {
-	display:block;
-	margin:auto;
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
 }
