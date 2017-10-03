@@ -11,7 +11,6 @@ html{
 
 .bgimg {
     /* Background image */
-    background-image: url("/images/bg.png");
     /* Full-screen */
     height: 100%;
     /* Center the background image */
@@ -21,7 +20,7 @@ html{
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
     position: relative;
     /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
+    color: black;
     /* Add a font */
     font-family: "Helvetic Neue", Helvetica, sans-serif;
     /* Set the font-size to 25 pixels */
