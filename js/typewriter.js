@@ -12,10 +12,17 @@ var TxtType = function(el, toRotate, period) {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        if (this.isDeleting && fullTxt.substring(this.txt.length-1, this.txt.length) == " ") {
+            this.txt = fullTxt.substring(0, this.txt.length - 2);
+        }
+        else if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        }
+        else if (fullTxt.substring(this.txt.length, this.txt.length + 1) == " ") {
+            this.txt = fullTxt.substring(0, this.txt.length + 2);
+        } 
+        else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
