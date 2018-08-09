@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
   <!--<nav class="light-blue lighten-1" role="navigation">
@@ -27,13 +27,11 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <div class="card white">
-        <div class="card-content">
-          <img class="portrait" src="img/portrait.jpg" alt="The man himself.">
-          <h1 class="header center orange-text">Conlon Novak,</h1>
-          <h1 class="header center blue-text typewrite" data-period="2000" data-type='[ "Full Stack Developer", "Full Time Nerd", "Aspiring Game Designer", "Hobbyist Photographer", "UI / UX Designer", "World Traveler", "Film Studies Enthusiast", "Student Filmmaker"]'></h1>
-        </div>
+      <div class=portrait-box>
+        <img class="portrait" src="img/portrait.jpg" alt="The man himself.">
       </div>
+      <h1 class="header center light-blue-text">Conlon Novak,</h1>
+      <h1 class="header center blue-text typewrite" data-period="2000" data-type='[ "Full Stack Developer", "Full Time Nerd", "Aspiring Game Designer", "Hobbyist Photographer", "UI / UX Designer", "World Traveler", "Film Studies Enthusiast", "Student Filmmaker"]'></h1>
       <br><br>
 
     </div>
@@ -56,7 +54,10 @@
                 Additional Major in Human-Computer Interaction<br>
                 Minor in Film and Media Studies</p>
                 <br>
-                <a class="btn-large waves-effect waves-light orange" href="https://docs.google.com/document/d/1dS1zSVEZfmX49COZIO8fWCTXCbm3An5wIwyl5lLEado/export?format=pdf"><i class="material-icons left">picture_as_pdf</i>Resume</a>
+                <br>
+                <div class="center-align">
+                  <a class="btn-large waves-effect waves-light blue" href="https://devpost.com/conlonnovak"><i class="material-icons left">folder_special</i>Portfolio</a>
+                </div>
               </div>
             </div>
           </div>
@@ -69,9 +70,14 @@
                 <h2 class="center light-blue-text"><i class="material-icons">work</i></h2>
                 <p class="light center">2017 - Present</p>
                 <h5 class="center">Software Engineering Institute</h5>
-                <p class="light center">Machine Learning Technical Intern</p>
+                <p class="light center">Machine Learning and Full Stack Technical Intern,<br> Tactical Technologies Group</p>
                 <br>
-                <a class="btn-large waves-effect waves-light orange" href="https://devpost.com/conlonnovak"><i class="material-icons left">folder_shared</i>Portfolio</a>
+                <br>
+                <div class="center-align">
+                  <a class="btn-large waves-effect waves-light blue" href="https://docs.google.com/document/d/1dS1zSVEZfmX49COZIO8fWCTXCbm3An5wIwyl5lLEado/export?format=pdf"><i class="large material-icons left">picture_as_pdf</i>Resume (PDF)</a>
+                </div>
+                <!-- <br>
+                <a class="btn-large waves-effect waves-light blue" href="https://devpost.com/conlonnovak"><i class="material-icons left">folder_shared</i>Portfolio</a> -->
               </div>
             </div>
           </div>
@@ -82,12 +88,18 @@
           <div class="card white">
             <div class="card-content">
               <div class="icon-block">
-                <h2 class="center light-blue-text"><i class="material-icons">local_activity</i></h2>
+                <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
                 <p class="light center">2016 - Present</p>
-                <h5 class="center">3 Hackathon Awards</h5>
-                <p class="light center">...and counting</p>
-                <br>
-                <a class="btn-large waves-effect waves-light orange" href="https://devpost.com/conlonnovak"><i class="material-icons left">folder_special</i>Hackathons</a>
+                <h5 class="center">Activites and Awards</h5>
+                <ul>
+                  <li><a href="https://devpost.com/conlonnovak"> 6 Hackathons, <i class="fas fa-trophy"></i>x3</a></li>
+                  <li>6 Puzzlehunts, <i class="fas fa-trophy"></i></li>
+                  <li>2 Game Jams</li>
+                  <li>5 Alpine Ski Races</li>
+                  <li><a href="https://www.oakland-review.com/about-us/">Edited and Published <i>The Oakland Review</a></i> </li>
+                  <li>Entered Short Film Festival</li>
+                </ul>
+                <p class="light center"><i>...and counting</i></p>
               </div>
             </div>
           </div>
@@ -98,38 +110,64 @@
     </div>
   </div>
 
-  <footer class="page-footer orange">
+  <footer class="page-footer blue lighten-1">
     <div class="container">
       <div class="row center">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/Conlon.Novak">
-                <i class="fab fa-facebook-f"></i>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/ConlonNovak">
-                <i class="fab fa-twitter"></i>
+              <a href="https://twitter.com/Conlon_Novak">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/conlon-novak/">
-                <i class="fab fa-linkedin-in"></i>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://instagram.com/conlonnovak/">
-                <i class="fab fa-instagram"></i>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse fa-lg"></i>
+                </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://github.com/conlonnovak">
-                <i class="fab fa-github"></i>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse fa-lg"></i>
+                </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="http://travel.conlonnovak.com/">
-                <i class="fab fa-tumblr"></i>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-globe-americas fa-stack-1x fa-inverse fa-lg"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://blog.conlonnovak.com/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-tumblr fa-stack-1x fa-inverse"></i>
+                </span>
               </a>
             </li>
           </ul>
@@ -137,59 +175,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-<<<<<<< HEAD
-      Made with <i class="material-icons tiny">favorite_border</i> by <a class="orange-text text-lighten-3" href="mailto:conlonnovak+website@cmu.edu">Conlon Novak</a> using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-=======
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">&copy; 2018 <a href="mailto:conlonnovak+website@cmu.edu"> Conlon Novak</a></span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/Conlon.Novak">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://twitter.com/Conlon_Novak">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/conlon-novak/">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://instagram.com/conlonnovak/">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/conlonnovak">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="http://blog.conlonnovak.com/">
-                  <i class="fa fa-tumblr"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <!--<ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>-->
-          </div>
-        </div>
->>>>>>> d5394daa328b6634f0a3eebc73967f2edc13eb50
+      Made with <i class="material-icons tiny">favorite_border</i> by <a class="blue-text text-lighten-3" href="mailto:conlonnovak+website@cmu.edu">Conlon Novak</a> using <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
