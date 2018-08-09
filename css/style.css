@@ -48,3 +48,7 @@ body {
    background-color: #000000;
    background-size: cover;
 }
+
+h1 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
