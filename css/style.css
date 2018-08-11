@@ -48,3 +48,26 @@ body {
    background-color: #000000;
    background-size: cover;
 }
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-content{
+  height: 100%;
+  position:relative;
+}
+
+.center-align {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+}
