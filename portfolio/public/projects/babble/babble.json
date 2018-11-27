@@ -4,7 +4,7 @@
   "type": "Hackathon",
   "date": "2018-09-07T22:00:00.000Z",
   "desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).",
-  "time_spent":"48 hours",
+  "time_spent":"36 hours",
   "client": "PennApps XVIII",
   "collaborators":[
   				{"name":"Aneek Muhkerjee"},

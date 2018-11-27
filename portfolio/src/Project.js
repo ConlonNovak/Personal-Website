@@ -31,7 +31,7 @@ class Project extends Component {
   loadDesc() {
     let projectPath = path.resolve(projectDir, this.props.name);    
     let jsonPath = path.join(projectPath, this.props.name + ".json");
-    let testData = '{"title": "Babble", "tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas", "type": "Hackathon", "date": "2018-09-07T22:00:00.000Z", "desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).", "time_spent":"48 hours", "client": "PennApps XVIII", "collaborators":[{"name":"Aneek Muhkerjee"},{"name":"Emannuel Eppinger"}],"image_url": "placeholder.png","devpost": "https://github.com/ConlonNovak/pennapps18","github": "https://devpost.com/software/pennapps18-2pjcx0","awards":[{"award":"Top 30 Hack"},{"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},{"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},{"award":"Lutron Sponsor Award: Best IoT Hack"}]}';
+    let testData = '{"title": "Babble", "tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas", "type": "Hackathon", "date": "2018-09-07T22:00:00.000Z", "desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).", "time_spent":"36 hours", "client": "PennApps XVIII", "collaborators":[{"name":"Aneek Muhkerjee"},{"name":"Emannuel Eppinger"}],"image_url": "placeholder.png","devpost": "https://github.com/ConlonNovak/pennapps18","github": "https://devpost.com/software/pennapps18-2pjcx0","awards":[{"award":"Top 30 Hack"},{"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},{"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},{"award":"Lutron Sponsor Award: Best IoT Hack"}]}';
 
     // fetch(jsonPath)
     //   .then(response => {
@@ -53,14 +53,51 @@ class Project extends Component {
       // });
   }
 
-  render() {
+  generateFooterText(){
+    let footer_text = "Made over " + this.state.time_spent;
+    if (this.state.collaborators != null) {
+      footer_text += " in collaboration with ";
+      if (this.state.collaborators.length === 1) {
+        footer_text += this.state.collaborators[0].name;
+      }
+      else if (this.state.collaborators.length === 2) {
+        footer_text += this.state.collaborators[0].name + " and " + this.state.collaborators[1].name;
+      }
+      else if (this.state.collaborators.length > 2){
+        for (let i=0; i<this.state.collaborators.length; i++){
+          footer_text += this.state.collaborators[i].name;
+          if (i === this.state.collaborators.length-2){
+            footer_text += ", and ";
+          }
+          else{
+            footer_text += ", ";
+          }
+        }
+      }
+    }
+    footer_text += " for " + this.state.client + ".";
+    return(footer_text);
+}
+
+  renderProject() {
     return (
+    // title
+    // date
+    // desc
+    // time_spent
+    // client
+    // collaborators
+    // image_url
+    // devpost
+    // github
+    // awards,
       <div className="row">
         <img className="project_hero" src={this.state.image_url}/>
-        <p class="project_overlay">{this.state.title}</p>
+        <p class="project_title">{this.state.title}</p>
+        <p>{this.renderFooter}</p>
         <Card>
           <CardContent>
-            <p>lorem ipsum</p>
+            <p>{this.generateFooterText()}</p>
           </CardContent>
           <CardActions>
             <Button size="small">Learn More</Button>
@@ -68,6 +105,15 @@ class Project extends Component {
         </Card>
       </div>
     );
+  }
+
+
+render() {
+  return (
+    <div>
+      {this.renderProject()}
+    </div>
+    )
   }
 }
 
