@@ -1,22 +1,33 @@
 {
-  "title": "Babble",
-  "tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas",
-  "type": "Hackathon",
-  "date": "2018-09-07T22:00:00.000Z",
-  "desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).",
-  "time_spent":"36 hours",
-  "client": "PennApps XVIII",
+  "title": "Babble", 
+  "tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas", 
+  "type": "Hackathon", 
+  "year": "2018", 
+  "desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).", 
+  "time_spent":"36 hours", 
+  "client": "PennApps XVIII", 
   "collaborators":[
-  				{"name":"Aneek Muhkerjee"},
-  				{"name":"Emannuel \"EJ\" Eppinger"},
-  				],
-  "image_url": "placeholder.png",
-  "devpost": "https://github.com/ConlonNovak/pennapps18",
-  "github": "https://devpost.com/software/pennapps18-2pjcx0",
+            {"name":"Aneek Muhkerjee"},
+            {"name":"Emannuel Eppinger"}
+           ], 
+  "skills":[
+            {"name":"Mobile Development", "type":"experience"},
+            {"name":"Java"},
+            {"name":"Android Studio"},
+            {"name":"MongoDB"}
+           ], 
+  "images":[
+
+          ],
+  "links":[
+            {"name":"Website", "link":"https://eppi.ng/pennapps18/"},
+            {"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},
+            {"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"}
+          ],
   "awards":[
-			{"award":"Top 30 Hack"},
-			{"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},
-  			{"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
-			{"award":"Lutron Sponsor Award: Best IoT Hack"},
-  		   ],
+            {"award":"Top 30 Hack"},
+            {"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},
+            {"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
+            {"award":"Lutron Sponsor Award: Best IoT Hack"}
+           ]
 }

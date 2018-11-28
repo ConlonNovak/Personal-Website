@@ -1,0 +1,21 @@
+{
+  "title": "Portfolio Website", 
+  "tagline": "Redesigning my Website using React and Material-UI", 
+  "type": "Course Project", 
+  "year": "2018", 
+  "desc": "TO-DO Fill out this with real text sometime in the future, not just this placeholder text that doesn't mean anything.",
+  "time_spent":"3 weeks", 
+  "client": "05-430 Programming Usable Interfaces", 
+  "collaborators":null, 
+  "skills":[
+            {"name":"Front-end Design"},
+            {"name":"HTML, CSS, and JS"},
+            {"name":"React"},
+            {"name":"Material-UI"}
+          ], 
+  "image_url": "placeholder.png", 
+  "link_url": null, 
+  "devpost": null, 
+  "github": "https://github.com/ConlonNovak/conlonnovak.github.io",
+  "awards":null
+}
