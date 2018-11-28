@@ -8,15 +8,16 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
-import Popover from '@material-ui/core/Popover';
-import TrophyIcon from '@material-ui/icons/Trophy'; //does this work? name?
-import Badge from '@material-ui/core/Badge';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+// import Popover from '@material-ui/core/Popover';
+// import Badge from '@material-ui/core/Badge';
 
 import "./App.css";
+import AwardsPopoverButton from './AwardsPopoverButton.js';
+
 
 const projectDir = path.join(process.env.PUBLIC_URL, "projects");
 
@@ -36,7 +37,7 @@ class Project extends Component {
   loadDesc() {
     let projectPath = path.resolve(projectDir, this.props.name);    
     let jsonPath = path.join(projectPath, this.props.name + ".json");
-    let testData = '{"title": "Babble","tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas","type": "Hackathon","year": "2018","desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).","time_spent":"36 hours","client": "PennApps XVIII","collaborators":[{"name":"Aneek Muhkerjee"},{"name":"Emannuel Eppinger"}],"skills":[{"name":"Mobile Development", "type":"experience"},{"name":"Java"},{"name":"Android Studio"},{"name":"MongoDB"}],"images":[],"links":[{"name":"Website", "link":"https://eppi.ng/pennapps18/"},{"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},{"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"}],"awards":[{"award":"Top 30 Hack"},{"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},{"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},{"award":"Lutron Sponsor Award: Best IoT Hack"}]}';
+    let testData = '{"title": "Babble","tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas","type": "Hackathon","year": "2018","desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).","time_spent":"36 hours","client": "PennApps XVIII","collaborators":[{"name":"Aneek Muhkerjee"},{"name":"Emannuel Eppinger"}],"skills":[{"name":"Mobile Development", "type":"experience"},{"name":"Java"},{"name":"Android Studio"},{"name":"MongoDB"}],"images":[],"links":[{"name":"Website", "link":"https://eppi.ng/pennapps18/"},{"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},{"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"}],"awards":[{"name":"Top 30 Hack"},{"name":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},{"name":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},{"name":"Lutron Sponsor Award: Best IoT Hack"}]}';
     
     // {
     //   "title": "Babble", 
@@ -65,10 +66,10 @@ class Project extends Component {
     //             {"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"}
     //           ],
     //   "awards":[
-    //             {"award":"Top 30 Hack"},
-    //             {"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},
-    //             {"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
-    //             {"award":"Lutron Sponsor Award: Best IoT Hack"}
+    //             {"name":"Top 30 Hack"},
+    //             {"name":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},
+    //             {"name":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
+    //             {"name":"Lutron Sponsor Award: Best IoT Hack"}
     //            ]
     // }
 
@@ -77,7 +78,7 @@ class Project extends Component {
     //     return response.json();
     //   })
 
-    let jsn = JSON.parse(testData);
+    let jsn = JSON.parse(testData); //TO-DO - this should be done in ProjectList, go get the JSON and pass in as props.
       // .then(jsn => {
         this.setState({ title: jsn.title });
         this.setState({ tagline: jsn.tagline });
@@ -134,14 +135,20 @@ class Project extends Component {
     return(footer_text);
   }
 
-  generateAwards(){
-    let elements = []
+  generateAwards(){//className={classes.margin}>
     if (this.state.awards != null) {
-      for (let i=0; i<this.state.awards.length; i++){
-        elements.push("");
-      }
+      return(
+        <AwardsPopoverButton awards = {this.state.awards}/>
+      );
     }
-    return(elements); 
+
+
+    // let elements = []
+    //   for (let i=0; i<this.state.awards.length; i++){
+    //     elements.push("");
+    //   }
+    // }
+    // return(elements); 
   }
 
   generateLinks(){
@@ -205,7 +212,7 @@ class Project extends Component {
             title={this.state.title}
           />
           <CardContent>
-            <div className="project_skills">{this.generateChips()}</div>
+            <div className="project_skills">{this.generateChips()}{this.generateAwards()}</div>
           </CardContent>
           <CardActions>
             {this.generateLinks()}
