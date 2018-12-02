@@ -137,9 +137,9 @@ class Project extends Component {
 
   generateAwards(){//className={classes.margin}>
     if (this.state.awards != null) {
-      return(
-        <AwardsPopoverButton awards = {this.state.awards}/>
-      );
+      // return(
+      //   <AwardsPopoverButton awards = {this.state.awards}/>
+      // );
     }
 
 
