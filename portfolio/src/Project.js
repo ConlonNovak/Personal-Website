@@ -7,6 +7,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import classNames from 'classnames';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
@@ -137,9 +138,9 @@ class Project extends Component {
 
   generateAwards(){//className={classes.margin}>
     if (this.state.awards != null) {
-      // return(
-      //   <AwardsPopoverButton awards = {this.state.awards}/>
-      // );
+      return(
+        <AwardsPopoverButton awards = {this.state.awards}/>
+      );
     }
 
 
@@ -155,7 +156,21 @@ class Project extends Component {
     let elements = []
     if (this.state.links != null) {
       for (let i=0; i<this.state.links.length; i++){
+        if (this.state.links[i].name === "Website"){
+          elements.push(<IconButton className={classNames(this.props.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+        }
+        else if (this.state.links[i].name === "Github"){
+          elements.push(<IconButton className={classNames(this.props.icon, 'fab fa-github fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+        }
+        else if (this.state.links[i].name === "Devpost"){
+          elements.push(<IconButton className={classNames(this.props.icon, 'fab fa-dev fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+        }
+        else if (this.state.links[i].name === "News"){
+          elements.push(<IconButton className={classNames(this.props.icon, 'fab fa-newspaper fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+        }
+        else{
         elements.push(<Button color="primary" href={this.state.links[i].link}>{this.state.links[i].name}</Button>);
+        }
       }
     }
     return(elements); 

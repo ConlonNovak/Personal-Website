@@ -21,13 +21,13 @@
           ],
   "links":[
             {"name":"Website", "link":"https://eppi.ng/pennapps18/"},
-            {"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},
             {"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"},
-            {"name":"MongoDB Blog", "link":"https://www.mongodb.com/blog/post/hacking-for-resilience-with-mongodb-stitch-at-pennapps-xviii"}
+            {"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},
+            {"name":"News", "link":"https://www.mongodb.com/blog/post/hacking-for-resilience-with-mongodb-stitch-at-pennapps-xviii"}
           ],
   "awards":[
             {"award":"Top 30 Hack"},
-            {"award":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},
+            {"award":"PennApps Route: Wharton Risk Center: Best Hack for Resilience"},
             {"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
             {"award":"Lutron Sponsor Award: Best IoT Hack"}
            ]

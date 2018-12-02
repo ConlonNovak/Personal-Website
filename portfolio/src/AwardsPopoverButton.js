@@ -34,11 +34,13 @@ class AwardsPopoverButton extends React.Component {
     const { classes } = this.props;
     const { anchorEl } = this.state;
     const open = Boolean(anchorEl);
+    const awardList = this.props.awards.map((d) => <li key={d.name}>{d.name}</li>);
+
 
     return (
       <div>
-        <IconButton aria-label=""> 
-          <Badge badgeContent={this.state.awards.length} color="primary">
+        <IconButton aria-label="" onClick={this.handleClick}> 
+          <Badge badgeContent={this.props.awards.length} color="primary">
             <i class="fas fa-trophy"></i>
           </Badge>
         </IconButton>
@@ -57,7 +59,7 @@ class AwardsPopoverButton extends React.Component {
             horizontal: 'center',
           }}
         >
-          <Typography className={classes.typography}>The content of the Popover.</Typography>
+          <Typography className={classes.typography}>{awardList}</Typography>
         </Popover>
       </div>
     );

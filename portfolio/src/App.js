@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
 import './App.css';
 import Project from './Project.js';
+import Footer from './Footer.js';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             Hello World
           </Button>
         <Project name="babble"/>
+        <Footer/>
       </div>
     );
   }
