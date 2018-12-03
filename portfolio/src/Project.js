@@ -200,8 +200,8 @@ class Project extends Component {
       elements.push(<Button disabled className={classes.button}>Links</Button>);
       for (let i=0; i<this.state.links.length; i++){
         if (this.state.links[i].name === "Website"){
-          elements.push(<div><Tooltip title="Website"><IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/></Tooltip></div>);
-          elements.push(<Tooltip title="Website"><IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/></Tooltip>);
+          // elements.push(<div><Tooltip title="Website"><IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/></Tooltip></div>);
+          // elements.push(<Tooltip title="Website"><IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/></Tooltip>);
           elements.push(<IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
 
         }
@@ -262,7 +262,7 @@ class Project extends Component {
           <CardActions>
             {this.generateLinks()}
           <div className={classNames(classes.expand)}>
-            <Button disabled>View Details</Button>
+            <Button disabled>{ this.state.expanded ? "Hide": "View" } Details</Button>
             <IconButton
               className={classNames(classes.expand, {
                 [classes.expandOpen]: this.state.expanded,
