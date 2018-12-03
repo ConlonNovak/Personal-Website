@@ -31,10 +31,9 @@ class Footer extends React.Component {
         <IconButton className={classNames(classes.icon, 'fab fa-github fa-inverse fa-lg')} href="https://github.com/conlonnovak"/>
         <IconButton className={classNames(classes.icon, 'fab fa-tumblr fa-inverse')} href="http://blog.conlonnovak.com/"/>                
         <IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} href="http://travel.conlonnovak.com/"/>
+        <br/>
         <div class="footer-copyright">
-          <div class="container">
-          <p>Made with <FavoriteBorder /> by <a href="mailto:conlonnovak+website@cmu.edu">Conlon Novak</a> using <a href="https://reactjs.org/">React</a> and <a href="https://material-ui.com/">Material-UI</a></p> 
-          </div>
+          <p>&#169; {(new Date()).getFullYear()} <a href="mailto:conlonnovak+website@cmu.edu">Conlon Novak</a>. All rights reserved. Made with <FavoriteBorder /> using <a href="https://reactjs.org/">React</a> and <a href="https://material-ui.com/">Material-UI</a>.</p> 
         </div>
       </div>
     );

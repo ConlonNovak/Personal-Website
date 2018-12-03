@@ -1,26 +1,53 @@
 import React, { Component } from "react";
 import * as path from "path";
-import classnames from 'classnames';
-import Chip from '@material-ui/core/Chip';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import classNames from 'classnames';
 import Collapse from '@material-ui/core/Collapse';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Chip from '@material-ui/core/Chip';
+import classNames from 'classnames';
+import Button from '@material-ui/core/Button';
 // import Popover from '@material-ui/core/Popover';
 // import Badge from '@material-ui/core/Badge';
-
 import "./App.css";
 import AwardsPopoverButton from './AwardsPopoverButton.js';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 const projectDir = path.join(process.env.PUBLIC_URL, "projects");
+const styles = theme => ({
+  card: {
+    maxWidth: 400,
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
+  actions: {
+    display: 'flex',
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+    marginLeft: 'auto',
+    [theme.breakpoints.up('sm')]: {
+      marginRight: -8,
+    },
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+});
+
 
 class Project extends Component {
   state = {
@@ -137,27 +164,46 @@ class Project extends Component {
   }
 
   generateAwards(){//className={classes.margin}>
+    let elements = []
+    const { classes } = this.props;
     if (this.state.awards != null) {
-      return(
-        <AwardsPopoverButton awards = {this.state.awards}/>
-      );
+      elements.push(<Button disabled className={classes.button}>Awards</Button>);
+      elements.push(<AwardsPopoverButton awards = {this.state.awards}/>);
+      return(elements); 
     }
+  }
 
-
-    // let elements = []
-    //   for (let i=0; i<this.state.awards.length; i++){
-    //     elements.push("");
-    //   }
-    // }
-    // return(elements); 
+  generateChips(){
+    const { classes } = this.props;
+    let elements = []
+    if (this.state.type != null) {
+      elements.push(<Chip label={this.state.type} className={this.props.chip} color="primary"/>);
+    }
+    if (this.state.skills != null) {
+      for (let i=0; i<this.state.skills.length; i++){
+        if (this.state.skills[i].type != null && this.state.skills[i].type === 'experience'){
+          elements.push(<Chip label={this.state.skills[i].name} className={this.props.chip} color="secondary"/>);
+        }
+        else {
+          elements.push(<Chip label={this.state.skills[i].name} className={this.props.chip} variant="outlined" color="secondary"/>);
+        }
+      }
+    }
+    return(elements); 
   }
 
   generateLinks(){
+    const { classes } = this.props;
     let elements = []
+    elements.push(this.generateAwards());
     if (this.state.links != null) {
+      elements.push(<Button disabled className={classes.button}>Links</Button>);
       for (let i=0; i<this.state.links.length; i++){
         if (this.state.links[i].name === "Website"){
-          elements.push(<IconButton className={classNames(this.props.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+          elements.push(<div><Tooltip title="Website"><IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/></Tooltip></div>);
+          elements.push(<Tooltip title="Website"><IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/></Tooltip>);
+          elements.push(<IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+
         }
         else if (this.state.links[i].name === "Github"){
           elements.push(<IconButton className={classNames(this.props.icon, 'fab fa-github fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
@@ -176,25 +222,9 @@ class Project extends Component {
     return(elements); 
   }
 
-  generateChips(){
-    let elements = []
-    if (this.state.type != null) {
-      elements.push(<Chip label={this.state.type} className={this.props.chip} color="primary"/>);
-    }
-    if (this.state.skills != null) {
-      for (let i=0; i<this.state.skills.length; i++){
-        if (this.state.skills[i].type != null && this.state.skills[i].type === 'experience'){
-          elements.push(<Chip label={this.state.skills[i].name} className={this.props.chip} color="secondary"/>);
-        }
-        else {
-          elements.push(<Chip label={this.state.skills[i].name} className={this.props.chip} variant="outlined" color="secondary"/>);
-        }
-      }
-    }
-    return(elements); 
-  }
 
   renderProject() {
+    const { classes } = this.props;
     return (
     // title          -
     // year 
@@ -227,20 +257,23 @@ class Project extends Component {
             title={this.state.title}
           />
           <CardContent>
-            <div className="project_skills">{this.generateChips()}{this.generateAwards()}</div>
+            <div className="project_skills">{this.generateChips()}</div>
           </CardContent>
           <CardActions>
             {this.generateLinks()}
+          <div className={classNames(classes.expand)}>
+            <Button disabled>View Details</Button>
             <IconButton
-              className={classnames(this.state.expand, {
-                [this.state.expandOpen]: this.state.expanded,
+              className={classNames(classes.expand, {
+                [classes.expandOpen]: this.state.expanded,
               })}
               onClick={this.handleExpandClick}
               aria-expanded={this.state.expanded}
               aria-label="Show more"
             >
-            <ExpandMoreIcon />
-          </IconButton>
+              <ExpandMoreIcon />
+            </IconButton>
+          </div>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <CardContent>
@@ -266,4 +299,4 @@ render() {
   }
 }
 
-export default Project;
+export default withStyles(styles)(Project);

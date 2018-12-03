@@ -26,7 +26,7 @@
             {"name":"News", "link":"https://www.mongodb.com/blog/post/hacking-for-resilience-with-mongodb-stitch-at-pennapps-xviii"}
           ],
   "awards":[
-            {"award":"Top 30 Hack"},
+            {"award":"Top 30 Hack Overall"},
             {"award":"PennApps Route: Wharton Risk Center: Best Hack for Resilience"},
             {"award":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
             {"award":"Lutron Sponsor Award: Best IoT Hack"}

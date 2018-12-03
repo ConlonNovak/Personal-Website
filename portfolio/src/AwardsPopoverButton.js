@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Popover from '@material-ui/core/Popover';
 import Badge from '@material-ui/core/Badge';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const styles = theme => ({
   typography: {
@@ -51,12 +52,12 @@ class AwardsPopoverButton extends React.Component {
           anchorEl={anchorEl}
           onClose={this.handleClose}
           anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'center',
+            vertical: 'top',
+            horizontal: 'left',
           }}
           transformOrigin={{
-            vertical: 'top',
-            horizontal: 'center',
+            vertical: 'bottom',
+            horizontal: 'left',
           }}
         >
           <Typography className={classes.typography}>{awardList}</Typography>
