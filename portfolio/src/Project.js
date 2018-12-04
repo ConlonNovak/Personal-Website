@@ -46,6 +46,10 @@ const styles = theme => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
+  chip: {
+    padding: theme.spacing.unit / 2,
+    margin: theme.spacing.unit / 2,
+  },
 });
 
 
@@ -138,7 +142,7 @@ class Project extends Component {
 //   },
 
   generateFooterText(){
-    let footer_text = this.state.title + " was made over " + this.state.time_spent;
+    let footer_text = this.state.title + " was made over " + this.state.time_spent  + " for " + this.state.client + " (" + this.state.year + ")";
     if (this.state.collaborators != null && this.state.collaborators.length > 0) {
       footer_text += " in collaboration with ";
       if (this.state.collaborators.length === 1) {
@@ -177,15 +181,15 @@ class Project extends Component {
     const { classes } = this.props;
     let elements = []
     if (this.state.type != null) {
-      elements.push(<Chip label={this.state.type} className={this.props.chip} color="primary"/>);
+      elements.push(<Chip label={this.state.type} className={classes.chip} color="primary"/>);
     }
     if (this.state.skills != null) {
       for (let i=0; i<this.state.skills.length; i++){
         if (this.state.skills[i].type != null && this.state.skills[i].type === 'experience'){
-          elements.push(<Chip label={this.state.skills[i].name} className={this.props.chip} color="secondary"/>);
+          elements.push(<Chip label={this.state.skills[i].name} className={classes.chip} color="secondary"/>);
         }
         else {
-          elements.push(<Chip label={this.state.skills[i].name} className={this.props.chip} variant="outlined" color="secondary"/>);
+          elements.push(<Chip label={this.state.skills[i].name} className={classes.chip} variant="outlined" color="secondary"/>);
         }
       }
     }
@@ -195,7 +199,6 @@ class Project extends Component {
   generateLinks(){
     const { classes } = this.props;
     let elements = []
-    elements.push(this.generateAwards());
     if (this.state.links != null) {
       elements.push(<Button disabled className={classes.button}>Links</Button>);
       for (let i=0; i<this.state.links.length; i++){
@@ -219,6 +222,7 @@ class Project extends Component {
         }
       }
     }
+    elements.push(this.generateAwards());
     return(elements); 
   }
 
@@ -249,7 +253,7 @@ class Project extends Component {
             //   </Avatar>
             // }
             title={this.state.title}
-            subheader={this.state.tagline + ", made for " + this.state.client + ", " + this.state.year}
+            subheader={this.state.tagline}
           />
           <CardMedia
             className="project_media"
