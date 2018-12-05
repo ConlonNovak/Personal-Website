@@ -29,6 +29,7 @@ class Footer extends React.Component {
         <IconButton className={classNames(classes.icon, 'fab fa-linkedin-in fa-inverse')} color="primary" href="https://www.linkedin.com/in/conlon-novak/"/>
         <IconButton className={classNames(classes.icon, 'fab fa-instagram fa-inverse fa-lg')} color="primary" href="https://instagram.com/conlonnovak/"/>
         <IconButton className={classNames(classes.icon, 'fab fa-github fa-inverse fa-lg')} color="primary" href="https://github.com/conlonnovak"/>
+        <IconButton className={classNames(classes.icon, 'fas fa-basketball-ball fa-inverse fa-lg')} color="primary" href="https://dribbble.com/conlonnovak"/>
         <IconButton className={classNames(classes.icon, 'fab fa-tumblr fa-inverse')} color="primary" href="http://blog.conlonnovak.com/"/>                
         <IconButton className={classNames(classes.icon, 'fa fa-globe-americas fa-inverse fa-lg')} color="primary" href="http://travel.conlonnovak.com/"/>
         <br/>

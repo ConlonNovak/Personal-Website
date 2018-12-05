@@ -16,9 +16,7 @@
             {"name":"Android Studio"},
             {"name":"MongoDB"}
            ], 
-  "images":[
-
-          ],
+  "images":null,
   "links":[
             {"name":"Website", "link":"https://eppi.ng/pennapps18/"},
             {"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"},

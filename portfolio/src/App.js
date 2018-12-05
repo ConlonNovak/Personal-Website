@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
 import './App.css';
-import Project from './Project.js';
+import ProjectList from './ProjectList.js';
 import Footer from './Footer.js';
 
 class App extends Component {
@@ -14,10 +13,7 @@ class App extends Component {
         <header className="App-header">
           <p>Conlon Novak</p>
         </header>
-          <Button variant="contained" color="primary">
-            Hello World
-          </Button>
-        <Project name="babble"/>
+        <ProjectList />
         <Footer/>
       </div>
     );

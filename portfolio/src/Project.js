@@ -67,51 +67,28 @@ class Project extends Component {
   }
 
   loadDesc() {
-    let projectPath = path.resolve(projectDir, this.props.name);    
-    let jsonPath = path.join(projectPath, this.props.name + ".json");
-    let testData = '{"title": "Babble","tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas","type": "Hackathon","year": "2018","desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).","time_spent":"36 hours","client": "PennApps XVIII","collaborators":[{"name":"Aneek Muhkerjee"},{"name":"Emannuel Eppinger"}],"skills":[{"name":"Mobile Development", "type":"experience"},{"name":"Java"},{"name":"Android Studio"},{"name":"MongoDB"}],"images":[],"links":[{"name":"Website", "link":"https://eppi.ng/pennapps18/"},{"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},{"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"}],"awards":[{"name":"Top 30 Hack"},{"name":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},{"name":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},{"name":"Lutron Sponsor Award: Best IoT Hack"}]}';
-    
-    // {
-    //   "title": "Babble", 
-    //   "tagline": "An Offline, Self-Propagating Messaging Platform for Low-Connectivity Areas", 
-    //   "type": "Hackathon", 
-    //   "year": "2018", 
-    //   "desc": "Babble is a messaging platform designed to be installed, setup, and used offline in a matter of minutes in areas with sparse, damanged, or inoperable internet connections. Prototyped on Android with Android Beam (to transfer the APK in under a minute to another phone), Android Nearby Connections (to create a mesh network of peer-to-peer bluetooth, wi-fi P2P, and NFC connections for messaging), and MongoDB Stitch (to upload messages to the cloud whenever a device in the network does go online).", 
-    //   "time_spent":"36 hours", 
-    //   "client": "PennApps XVIII", 
-    //   "collaborators":[
-    //             {"name":"Aneek Muhkerjee"},
-    //             {"name":"Emannuel Eppinger"}
-    //            ], 
-    //   "skills":[
-    //             {"name":"Mobile Development"},
-    //             {"name":"Java"},
-    //             {"name":"Android Studio"},
-    //             {"name":"MongoDB"}
-    //            ], 
-    //   "images":[
-                
-    //           ],
-    //   "links":[
-    //             {"name":"Website", "link":"https://eppi.ng/pennapps18/"},
-    //             {"name":"Devpost", "link":"https://devpost.com/software/pennapps18-2pjcx0"},
-    //             {"name":"Github", "link":"https://github.com/ConlonNovak/pennapps18"}
-    //           ],
-    //   "awards":[
-    //             {"name":"Top 30 Hack"},
-    //             {"name":"PennApps Route | Wharton Risk Center: Best Hack for Resilience"},
-    //             {"name":"MongoDB Sponsor Award: Best Use of MongoDB Stitch"},
-    //             {"name":"Lutron Sponsor Award: Best IoT Hack"}
-    //            ]
-    // }
+    // let projectPath = path.resolve(projectDir, this.props.name);    
+    // let jsonPath = path.join(projectPath, this.props.name + ".json");
 
-    // fetch(jsonPath)
-    //   .then(response => {
-    //     return response.json();
-    //   })
+    //let testData = '{"title": "Test Project","tagline": "Something something cryptocurrency something brain-power something machine learning","type": "Project Type","year": "20XX","desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","time_spent":"## time","client": "Client Name","collaborators":[{"name":"Collaborator 1"},{"name":"Collaborator 2"},{"name":"Collaborator 3"}],"skills":[{"name":"Experience Category", "type":"experience"},{"name":"Skill 1"},{"name":"Skill 2"},{"name":"Skill 3"}],"images":null,"links":[{"name":"Website", "link":""},{"name":"Devpost", "link":""},{"name":"Github", "link":""},{"name":"News", "link":""},{"name":"Dribbble", "link":""}],"awards":[{"name":"Award 1"},{"name":"Award 2"},{"name":"Award 3"}]}';
+    //let jsn = JSON.parse(testData); 
 
-    let jsn = JSON.parse(testData); //TO-DO - this should be done in ProjectList, go get the JSON and pass in as props.
-      // .then(jsn => {
+    /*fetch(verdantPath + "/" + this.props.name + ".json")
+    .then(response => {
+      return response.json();
+    })
+    .then(jsn => {
+      this.setState({ title: jsn.title });
+      this.setState({ desc: jsn.desc });
+    });*/
+
+    //TO-DO - this should be done in ProjectList, go get the JSON and pass in as props.
+    let jsonPath = path.join(projectDir, this.props.name + ".json");
+    fetch(jsonPath)
+      .then(response => {
+        return response.json();
+      })
+      .then(jsn => {
         this.setState({ title: jsn.title });
         this.setState({ tagline: jsn.tagline });
         this.setState({ type: jsn.type });
@@ -124,7 +101,7 @@ class Project extends Component {
         this.setState({ images: jsn.images });
         this.setState({ links: jsn.links });
         this.setState({ awards: jsn.awards });
-      // });
+      });
   }
 
 // expand: {
@@ -170,7 +147,7 @@ class Project extends Component {
   generateAwards(){//className={classes.margin}>
     let elements = []
     const { classes } = this.props;
-    if (this.state.awards != null) {
+    if (this.state.awards != null && this.state.awards.length >= 1) {
       elements.push(<Button disabled className={classes.button}>Awards</Button>);
       elements.push(<AwardsPopoverButton awards = {this.state.awards}/>);
       return(elements); 
@@ -214,8 +191,11 @@ class Project extends Component {
         else if (this.state.links[i].name === "Devpost"){
           elements.push(<IconButton className={classNames(this.props.icon, 'fab fa-dev fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
         }
+        else if (this.state.links[i].name === "Dribbble"){
+          elements.push(<IconButton className={classNames(this.props.icon, 'fas fa-basketball-ball fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+        }
         else if (this.state.links[i].name === "News"){
-          elements.push(<IconButton className={classNames(this.props.icon, 'fab fa-newspaper fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
+          elements.push(<IconButton className={classNames(this.props.icon, 'fas fa-newspaper fa-inverse fa-lg')} color="primary" href={this.state.links[i].link}/>);
         }
         else{
         elements.push(<Button color="primary" href={this.state.links[i].link}>{this.state.links[i].name}</Button>);
