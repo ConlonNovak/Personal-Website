@@ -1,0 +1,27 @@
+{
+  "title": "Video Summarization Web ML Platform", 
+  "tagline": "WebApp to Allow Non-Technical Users to Run Machine Learning Algorithms on Curated Datasets", 
+  "type": "Internship", 
+  "year": "2017-2018", 
+  "desc": "Expanding on prior VidSum work to apply research ML algorithms to UAV video in quasi-real time, VidSumm Web is a tool to allow novice users to run and view the results from those preconfigured algorithms on curated datasets in the system. My contribution primarily revolved around the Docker Python SDK, responsible for launching, monitoring, and providing output from the configured ML algorithms.", 
+  "time_spent":"summer 2017 and summer 2018", 
+  "client": "Software Engineering Institute", 
+  "collaborators":[
+            {"name":"Ed Morris"},
+            {"name":"Kevin Pitstick"},
+            {"name":"the Tactical Technologies Group"}
+           ], 
+  "skills":[
+            {"name":"Full-Stack Development", "type":"experience"},
+            {"name":"Machine Learning", "type":"experience"},
+            {"name":"Python"},
+            {"name":"Tensorflow"},
+            {"name":"Docker"},
+            {"name":"Flask"}
+           ], 
+  "images":null,
+  "links":[
+            {"name":"News", "link":"https://insights.sei.cmu.edu/sei_blog/2018/01/video-summarization-using-machine-learning-to-process-video-from-unmanned-aircraft-systems.html"},
+          ],
+  "awards":null
+}

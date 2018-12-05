@@ -1,0 +1,18 @@
+{
+  "title": "Web Portfolio", 
+  "tagline": "Redesigning my Website with Material Design", 
+  "type": "Coursework", 
+  "year": "2018", 
+  "desc": "My online portfolio is designed to be visually appealing, drawing upon well-established material design style guidelines and elements to create a user experience that provides information while not overwhelming users. Additionally, the site is intended to demonstrate both my range of skills and diversity of interests to potential employers.",
+  "time_spent":"3 weeks", 
+  "client": "05-430 Programming Usable Interfaces", 
+  "collaborators":null, 
+  "skills":[
+            {"name":"WebDev", "type":"experience"},
+            {"name":"React"},
+            {"name":"Material-UI"}
+          ], 
+  "images": null, 
+  "links": [{"name":"Github", "link":"https://github.com/ConlonNovak/conlonnovak.github.io"}], 
+  "awards": null
+}

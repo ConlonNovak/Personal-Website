@@ -1,0 +1,24 @@
+{
+  "title": "Labyrinthine", 
+  "tagline": "A 2.5D Raycasting Engine and Maze-Exploration Game", 
+  "type": "Term Project", 
+  "year": "2016", 
+  "desc": "For my Fundamentals of Programming and Computer Science (15-112) term project, I created a maze exploration game where the player must navigate a randomly generated labyrinth of walls, find the key to unlock the single escape door, and work against the clock to escape with their lives. To do this, I created a ray-casting program that takes a 2D list of wall placements and uses image textures for the walls and turns them into 3D environments by “propping up” these flat objects at different distances from the player, simulated by drawing larger or smaller slices of the textures on the screen. PyGame allows textures to sliced (blitted) onto the screen in smaller parts, in my program represented by rays. Ray are “cast” from the player/camera object (a specific point) at a certain angle and return the location and distance of the first object they encounter. Using the distance to determine the size of the object slice on the screen and the screen resolution to determine the width of the slice of the object, the scene can be drawn in simulated 3D (termed 2.5D) as a collection of textured rectangles that approximate how the player would actually perceive the world. The mazes are recursively generated using a “wall adding algorithm,” where a level is first generated to be a chamber, an open room with bordering walls on all sides (maze complexity 0). Then the algorithm adds a random row and a random column of walls, resulting in four distinct quadrants of the chamber. Three of these walls will randomly have protected hallways carved through them in order to allow the player to navigate it that cannot be overwritten by future walls. This is a maze with complexity 1. This algorithm can be called to an arbitrary depth, limited only by the size of the original chamber that calls it. These mazes can be solved from any two points because of the nature of the figure – the interior of the shape is one continuous space without pockets or entrapments because of the use of the three hallways through the dividing walls.", 
+  "time_spent":"three weeks", 
+  "client": "15-112 Fundamentals of Programming", 
+  "collaborators":null, 
+  "skills":[
+            {"name":"Game Development", "type":"experience"},
+            {"name":"Python"},
+            {"name":"PyGame"},
+            {"name":"2.5D Raycasting"},
+           ], 
+  "images":null,
+  "links":[
+            {"name":"Devpost", "link":"https://devpost.com/software/labyrinthine"},
+            {"name":"Github", "link":"https://github.com/ConlonNovak/Labyrinthine"}
+          ],
+  "awards":[
+            {"award":"15-122 F16 Term Project Showcase: Featured Term Project"}
+           ]
+}
