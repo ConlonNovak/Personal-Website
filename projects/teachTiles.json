@@ -11,7 +11,6 @@
             {"name":"Benjamin Johnson-Staub"}
            ], 
   "skills":[
-            {"name":"Mobile Development", "type":"experience"},
             {"name":"Mixed Reality", "type":"experience"},
             {"name":"Unity 3D"},
             {"name":"Vuforia"},
@@ -19,7 +18,7 @@
            ], 
   "images":null,
   "links":[
-            {"name":"Devpost", "link":"https://devpost.com/software/teach-tiles"},
+            {"name":"Devpost", "link":"https://devpost.com/software/teach-tiles"}
           ],
   "awards":[
             {"award":"DUO Sponsor Award: Best Approach to Security or Education"}

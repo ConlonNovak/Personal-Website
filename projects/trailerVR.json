@@ -12,18 +12,16 @@
             {"name":"Joshua Moavenzadeh"}
            ], 
   "skills":[
-            {"name":"Mobile Development", "type":"experience"},
             {"name":"Mixed Reality", "type":"experience"},
-            {"name":"Google Cardboard"},
             {"name":"Unity 3D"},
             {"name":"Vuforia"},
             {"name":"C#"}
            ], 
   "images":null,
   "links":[
-            {"name":"Devpost", "link":"https://devpost.com/software/teach-tiles"},
+            {"name":"Devpost", "link":"https://devpost.com/software/teach-tiles"}
           ],
   "awards":[
-            {"award":"Grand Prize 1st Place"}
+            {"award":"1st Place Grand Prize"}
            ]
 }
