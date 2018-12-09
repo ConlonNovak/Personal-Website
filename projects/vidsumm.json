@@ -1,9 +1,9 @@
 {
-  "title": "Video Summarization Web ML Platform", 
+  "title": "Video Summarization Web Platform", 
   "tagline": "WebApp for Non-Technical Users to run Machine Learning Algorithms", 
   "type": "Internship", 
   "year": "2017-2018", 
-  "desc": "Expanding on prior VidSum work to apply research ML algorithms to UAV video in quasi-real time, VidSumm Web is a tool to allow novice users to run and view the results from those preconfigured algorithms on curated datasets in the system. My contribution primarily revolved around the Docker Python SDK, responsible for launching, monitoring, and providing output from the configured ML algorithms.", 
+  "desc": "Expanding on prior VidSumm work to apply research ML algorithms to UAV video in quasi-real time, VidSumm Web is a tool to allow novice users to run and view the results from those preconfigured algorithms on curated datasets in the system. My contribution primarily revolved around the Docker Python SDK, responsible for launching, monitoring, and providing output from the configured ML algorithms.", 
   "time_spent":"the course of two summer internships", 
   "client": "the Software Engineering Institute", 
   "collaborators":[

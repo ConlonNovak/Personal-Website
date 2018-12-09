@@ -1,0 +1,46 @@
+{
+  "projects":[
+    {"title": "A&M Chess Camps", 
+    "tagline": "Full-Stack Development Project in Ruby on Rails", 
+    "type": "Full-Stack Development", 
+    "year": "2018", 
+    "desc": "Simulated consultancy with \"A&M Chess Camps\" to develop database and frontend website to meet accessibility, clarity, and interactivity standards. Created with Ruby, HTML, and JS using the Materialize CSS framework. Website development project for 67-272 Application Design and Development. Code withheld at request of course instructor.", 
+    "links":[
+              {"name":"Link", "link":"https://67272a.cmuis.net/projects/5"}
+            ],
+    "awards":null
+    },
+    {"title": "User Response Tool", 
+    "tagline": "Data Collection Utility for HCII EduTech Research Project", 
+    "type": "Interaction Design", 
+    "year": "2017", 
+    "desc": "Developed in collaboration with primary investigator and project lead Samantha Finkelstein and a programming team in the HCII ArticuLab, the ALEX User Response Tool would present research participants with instructional content, play audio files, and allow or prevent progress appropriately based on password input, all while employing a non-threatening visual style and offering clear interactions to elementary school students.", 
+    "links":[
+              {"name":"Publication", "link":"https://www.cs.cmu.edu/~cvaughn/pubs/FinkelsteinEtAl_2013.pdf"}
+            ],
+    "awards":null
+    },
+    {"title": "CtrlCore Prototype", 
+    "tagline": "Projectable Touchscreens for Smarthome Automation", 
+    "type": "Interface Design", 
+    "year": "2017", 
+    "desc": "Leveraging Leap motion gestures to track the user's hands and to turn any surface into a projected touchscreen, the display can be set up less than two feet away from a wall or desk to connect to the user's existing network of smart devices. For our demonstration, we configured a series of Adafruit LEDs to be controlled by an Arduino Uno. Changes made in CtrlHub's light management environment are then broadcast to the Arduino over serial communications, resulting in a range of dynamic behaviors in a number of output devices.", 
+    "links":[
+              {"name":"Devpost", "link":"https://devpost.com/software/ctrlcore"}
+            ],
+    "awards":[
+            {"award":"Rockwell Automation Sponsor Award: Best Environment Impact Hack"}
+            ]  
+    },
+    {"title": "Flower Power", 
+    "tagline": "Children's Museum Exhibit Designed to Inspire Wonder", 
+    "type": "Interaction Design", 
+    "year": "2016", 
+    "desc": "For our 16-223 Intro to Physical Computing final project, we created a set of acrylic “glow flowers” that light up and play music when plugged into pots. Our goal was to inspire wonder in children by having them be able to plug flowers into and remove them from pots, each with unique and different behaviors, bringing them to life in the process. We wanted each pot to feel distinct when activated by playing different chiptune-style songs and shining different shades of light through the flower via a multi-color LED in the pot and strands of fiber optic cable in the flower. Our project held up well during the museum visit and was mostly popular with younger children. Made in collaboration with Sydney Ayers and Nitesh Sridhar.",
+    "links":[
+              {"name":"Devpost", "link":"https://devpost.com/software/flower-power"}
+            ],
+    "awards":null
+    }
+  ]
+}
