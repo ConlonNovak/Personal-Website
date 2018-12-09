@@ -1,0 +1,27 @@
+{
+  "title": "TrailerVR", 
+  "tagline": "Augmented Reality Movie Metadata via Google Cardboard AR", 
+  "type": "Hackathon", 
+  "year": "2016", 
+  "desc": "TrailerVR augments movie posters and DVD covers to reveal information about the cast, ratings, and reviews while also providing an immersive trailer viewing experience. We utilized the Vuforia API and the Unity engine to recognize keys (movie posters and covers) and overlay the trailer in an augmented reality environment in Google Cardboard.", 
+  "time_spent":"24 hours", 
+  "client": "Hack112", 
+  "collaborators":[
+            {"name":"Marcelo Luciano"},
+            {"name":"Eugene Luo"},
+            {"name":"Joshua Moavenzadeh"}
+           ], 
+  "skills":[
+            {"name":"Mixed Reality", "type":"experience"},
+            {"name":"Unity 3D"},
+            {"name":"Vuforia"},
+            {"name":"C#"}
+           ], 
+  "images":null,
+  "links":[
+            {"name":"Devpost", "link":"https://devpost.com/software/trailervr"}
+          ],
+  "awards":[
+            {"award":"1st Place Grand Prize"}
+           ]
+}
