@@ -12,7 +12,7 @@
             {"name":"the Tactical Technologies Group"}
            ], 
   "skills":[
-            {"name":"Full-Stack Development", "type":"experience"},
+            {"name":"Full-Stack", "type":"experience"},
             {"name":"Machine Learning", "type":"experience"},
             {"name":"Python"},
             {"name":"Tensorflow"},
