@@ -28,10 +28,6 @@ html {
 	}
 }
 
-.icons-social i {
-	font-size: 3em;
-}
-
 /* Custom Styles */
 
 main {
@@ -53,15 +49,30 @@ main > .intro {
 main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
-	font-weight: bold;
+/*	font-weight: bold;*/
 }
 
 a {
 	color:#0277BD;
 }
 
+.call-to-action {
+	font-size: 3em;
+	color:#0277BD;
+}
+
+.call-to-action a {
+	font-size: .6em;
+	color:#0277BD;
+}
+
+/*.call-to-action  i {
+	font-size: 3em;
+}*/
+
 .icons-social i {
 	padding: 10px;
+	font-size: 3em;
 }
 
 .devto {
