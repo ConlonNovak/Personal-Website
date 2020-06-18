@@ -85,3 +85,7 @@ a {
 	width: 2.65rem;
 	height: 2.65rem;
 }
+
+body > main > div.call-to-action > a:nth-child(4):hover > i {
+	color:black;
+}
