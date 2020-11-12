@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hackathon on Conlon Novak</title>
+    <link>http://conlonnovak.com//tags/hackathon/</link>
+    <description>Recent content in hackathon on Conlon Novak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year} Conlon Novak.</copyright>
+    <lastBuildDate>Sun, 13 Sep 2020 12:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ThanOS</title>
+      <link>http://conlonnovak.com//portfolio/thanos/</link>
+      <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
+      
+      <guid>http://conlonnovak.com//portfolio/thanos/</guid>
+      <description>Team Members: Emmanuel Eppinger, Connie Chao, and Deepayan Patra</description>
+    </item>
+    
+    <item>
+      <title>Babble</title>
+      <link>http://conlonnovak.com//portfolio/babble/</link>
+      <pubDate>Tue, 10 Sep 2019 12:00:00 -0500</pubDate>
+      
+      <guid>http://conlonnovak.com//portfolio/babble/</guid>
+      <description>SUBMITTED TO PennApps XVIII
+WINNER Top 30 Hack WINNER Lutron IoT Prize WINNER Best Use of MongoDB Stitch WINNER PennApps Route | Best Hack for Resilience (Wharton Risk Center)
+View Babble on DevPostMongoDB blog post about BabbleTeam Members: Aneek Mukherjee and Emmanuel Eppinger</description>
+    </item>
+    
+    <item>
+      <title>Teach Tiles</title>
+      <link>http://conlonnovak.com//portfolio/teach-tiles/</link>
+      <pubDate>Sat, 17 Sep 2016 06:00:00 -0500</pubDate>
+      
+      <guid>http://conlonnovak.com//portfolio/teach-tiles/</guid>
+      <description>Team Members: Tom Wildenhain and Benjamin Johnson-Staub</description>
+    </item>
+    
+  </channel>
+</rss>

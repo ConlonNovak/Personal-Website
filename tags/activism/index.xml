@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>activism on Conlon Novak</title>
+    <link>http://conlonnovak.com//tags/activism/</link>
+    <description>Recent content in activism on Conlon Novak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year} Conlon Novak.</copyright>
+    <lastBuildDate>Fri, 17 Jul 2020 05:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/activism/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demand Change at CMU</title>
+      <link>http://conlonnovak.com//portfolio/demand-cmu-support/</link>
+      <pubDate>Fri, 17 Jul 2020 05:00:00 -0500</pubDate>
+      
+      <guid>http://conlonnovak.com//portfolio/demand-cmu-support/</guid>
+      <description>   Rapid-Response Activism Resource Hub for Carnegie Mellon University   </description>
+    </item>
+    
+  </channel>
+</rss>
