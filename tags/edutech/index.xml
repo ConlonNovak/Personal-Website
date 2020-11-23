@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>edutech on Conlon Novak</title>
+    <link>http://conlonnovak.com//tags/edutech/</link>
+    <description>Recent content in edutech on Conlon Novak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year} Conlon Novak.</copyright>
+    <lastBuildDate>Sat, 17 Sep 2016 06:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/edutech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teach Tiles</title>
+      <link>http://conlonnovak.com//portfolio/teach-tiles/</link>
+      <pubDate>Sat, 17 Sep 2016 06:00:00 -0500</pubDate>
+      
+      <guid>http://conlonnovak.com//portfolio/teach-tiles/</guid>
+      <description>Impact: Designing for Future Educational Technologies   Key Concepts: Augmented Reality, Educational Technology
+Tools: Unity, Vuforia Mixed Reality API
+Roles: User Experience Designer, Graphic Designer, Videographer, Video Editor
+Duration: 24 hours during HackCMU 2016
+Team Members: Tom Wildenhain and Benjamin Johnson-Staub
+TeachTiles is both a really interesting design concept and an excellent example of how low- and mid-fidelity prototypes can be developed quickly, while still yielding meaningful engagement and feedback from people.</description>
+    </item>
+    
+  </channel>
+</rss>

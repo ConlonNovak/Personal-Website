@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash-scripting on Conlon Novak</title>
+    <link>http://conlonnovak.com//tags/bash-scripting/</link>
+    <description>Recent content in bash-scripting on Conlon Novak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year} Conlon Novak.</copyright>
+    <lastBuildDate>Sun, 13 Sep 2020 12:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/bash-scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ThanOS</title>
+      <link>http://conlonnovak.com//portfolio/thanos/</link>
+      <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
+      
+      <guid>http://conlonnovak.com//portfolio/thanos/</guid>
+      <description>Impact: Humor through Design   Key Concepts: Scripting, Poor data management practices, Not taking ourselves too seriously
+Tools: Linux Command Line, VIM, Sublime Text, Figma, Adobe Premiere, Zoom
+Roles: Bash Script Developer, Storyboarder, Video Editor
+Duration: 48 hours during PennApps XXI
+Team Members: Emmanuel Eppinger, Connie Chao, and Deepayan Patra
+This one is rather silly, but intentionally so. For PennApps XXI, we built a disk manager for Linux that places your information (and system files) entirely in the hands of destiny—in this case, the psuedorandom RANDOM function of Linux.</description>
+    </item>
+    
+  </channel>
+</rss>
