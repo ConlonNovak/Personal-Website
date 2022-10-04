@@ -1,30 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>webdev on Conlon Novak</title>
-    <link>http://conlonnovak.com//tags/webdev/</link>
-    <description>Recent content in webdev on Conlon Novak</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© {year} Conlon Novak.</copyright>
-    <lastBuildDate>Thu, 30 Jul 2020 03:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/webdev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Voice-Enabled Services</title>
-      <link>http://conlonnovak.com//portfolio/vespa/</link>
-      <pubDate>Thu, 30 Jul 2020 03:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/vespa/</guid>
-      <description>Team Members: Laura Beth Fulton, Tommy Byler, Simran Jobanputra, and Judy Chun</description>
-    </item>
-    
-    <item>
-      <title>Demand Change at CMU</title>
-      <link>http://conlonnovak.com//portfolio/demand-cmu-support/</link>
-      <pubDate>Fri, 17 Jul 2020 05:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/demand-cmu-support/</guid>
-      <description>   Rapid-Response Activism Resource Hub for Carnegie Mellon University   </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>webdev on Conlon Novak</title><link>/tags/webdev/</link><description>Recent content in webdev on Conlon Novak</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© {year} Conlon Novak.</copyright><lastBuildDate>Wed, 17 Jun 2020 05:00:00 -0500</lastBuildDate><atom:link href="/tags/webdev/index.xml" rel="self" type="application/rss+xml"/><item><title>Demand Change at CMU</title><link>/portfolio/demand-cmu-support/</link><pubDate>Wed, 17 Jun 2020 05:00:00 -0500</pubDate><guid>/portfolio/demand-cmu-support/</guid><description>Impact: Developing to Support Community Activism Key Concepts: Community Organizing, Information Transparency, Oversight, Accountability
+Tools: HTML, CSS, JavaScript
+Roles: Archivist, Web Developer, Community Activist
+Duration: Ongoing since June 2020
+This project was born out of a particularly frustrating time to be a student at Carnegie Mellon University, made more difficult by the seemingly endless supply of outrage, energy, and effort that wasn&amp;rsquo;t being put towards a single, combined effort to effect change.</description></item></channel></rss>

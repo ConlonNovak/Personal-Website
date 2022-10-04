@@ -1,83 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>videography on Conlon Novak</title>
-    <link>http://conlonnovak.com//tags/videography/</link>
-    <description>Recent content in videography on Conlon Novak</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© {year} Conlon Novak.</copyright>
-    <lastBuildDate>Sun, 13 Sep 2020 12:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/videography/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ThanOS</title>
-      <link>http://conlonnovak.com//portfolio/thanos/</link>
-      <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/thanos/</guid>
-      <description>Impact: Humor through Design   Key Concepts: Scripting, Poor data management practices, Not taking ourselves too seriously
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>videography on Conlon Novak</title><link>/tags/videography/</link><description>Recent content in videography on Conlon Novak</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© {year} Conlon Novak.</copyright><lastBuildDate>Sun, 13 Sep 2020 12:00:00 -0500</lastBuildDate><atom:link href="/tags/videography/index.xml" rel="self" type="application/rss+xml"/><item><title>ThanOS</title><link>/portfolio/thanos/</link><pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate><guid>/portfolio/thanos/</guid><description>Impact: Humor through Design Key Concepts: Scripting, Poor data management practices, Not taking ourselves too seriously
 Tools: Linux Command Line, VIM, Sublime Text, Figma, Adobe Premiere, Zoom
 Roles: Bash Script Developer, Storyboarder, Video Editor
 Duration: 48 hours during PennApps XXI
 Team Members: Emmanuel Eppinger, Connie Chao, and Deepayan Patra
-This one is rather silly, but intentionally so. For PennApps XXI, we built a disk manager for Linux that places your information (and system files) entirely in the hands of destiny—in this case, the psuedorandom RANDOM function of Linux.</description>
-    </item>
-    
-    <item>
-      <title>Voice-Enabled Services</title>
-      <link>http://conlonnovak.com//portfolio/vespa/</link>
-      <pubDate>Thu, 30 Jul 2020 03:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/vespa/</guid>
-      <description>Impact: Designing for Underserved Groups     Key Concepts: Empathy, Coordinated Entry, Meeting people where they are, Conversational User Interfaces, Government Technology, Agile Development
+This one is rather silly, but intentionally so. For PennApps XXI, we built a disk manager for Linux that places your information (and system files) entirely in the hands of destiny—in this case, the psuedorandom RANDOM function of Linux.</description></item><item><title>Voice-Enabled Services</title><link>/portfolio/vespa/</link><pubDate>Thu, 30 Jul 2020 03:00:00 -0500</pubDate><guid>/portfolio/vespa/</guid><description>Impact: Designing for Underserved Groups Key Concepts: Empathy, Coordinated Entry, Meeting people where they are, Conversational User Interfaces, Government Technology, Agile Development
 Tools: Voiceflow, Amazon Alexa, Facebook Messenger API, Figma, Adobe InDesign, Adobe Premiere, Zoom
 Roles: Scrum Master, Client Manager, Design Researcher, User Experience Designer, Web Developer, Video Editor
 Duration: 7 months
 Team Members: Laura Beth Fulton, Tommy Byler, Simran Jobanputra, and Judy Chun
-Getting public assistance can be prohibitively hard, especially for people affected by disability and discrimination.</description>
-    </item>
-    
-    <item>
-      <title>Senior Honors Thesis</title>
-      <link>http://conlonnovak.com//portfolio/thesis/</link>
-      <pubDate>Tue, 05 May 2020 09:30:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/thesis/</guid>
-      <description>Impact: Researching Across Cultures   Title: “Se Graban Memorias,” A Contextual Analysis of El Paquete Semanal, Human Networks, and Internet Access in Camagüey, Cuba
+Getting public assistance can be prohibitively hard, especially for people affected by disability and discrimination.</description></item><item><title>Senior Honors Thesis</title><link>/portfolio/thesis/</link><pubDate>Tue, 05 May 2020 09:30:00 -0500</pubDate><guid>/portfolio/thesis/</guid><description>Impact: Researching Across Cultures Title: “Se Graban Memorias,” A Contextual Analysis of El Paquete Semanal, Human Networks, and Internet Access in Camagüey, Cuba
 Key Concepts: Ethnographic Research, Internet Connectivity, Sneakernets, Emergent Cultural Phenomena, Cuban History
 Tools: Field Research, Interviews, Correspondence, Literature Reviews, Background Research
 Roles: Author, Interviewer, Videographer, Video Editor
 Duration: 18 months (Two week-long trips to Cuba in Mar. 2019 and Jan. 2020, respectively)
-Faculty Advisor: Dr.</description>
-    </item>
-    
-    <item>
-      <title>Babble</title>
-      <link>http://conlonnovak.com//portfolio/babble/</link>
-      <pubDate>Tue, 10 Sep 2019 12:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/babble/</guid>
-      <description>Impact: Prototyping for Emergency Situations   Key Concepts: Near-Field Communications, Android Beam, Point-to-Point Wi-Fi, Offline Communications, Emergency Response
+Faculty Advisor: Dr. Therese Tardio, Modern Languages</description></item><item><title>Babble</title><link>/portfolio/babble/</link><pubDate>Tue, 10 Sep 2019 12:00:00 -0500</pubDate><guid>/portfolio/babble/</guid><description>Impact: Prototyping for Emergency Situations Key Concepts: Near-Field Communications, Android Beam, Point-to-Point Wi-Fi, Offline Communications, Emergency Response
 Tools: Java, MongoDB, Android Studio, iMovie
 Roles: Database Architect, App Developer, Video Editor
 Duration: 48 hours during PennApps XVIII
 Awards: Top 30 Hack, Lutron IoT Prize, Best Use of MongoDB Stitch, Best Hack for Resilience - Wharton Risk Center
 Team Members: Aneek Mukherjee and Emmanuel Eppinger
-Inspired by the vulnerability of traditional communication infrastructure to widespread natural disaster, Babble is a chat platform that is able to be installed, setup, and used 100% offline.</description>
-    </item>
-    
-    <item>
-      <title>Teach Tiles</title>
-      <link>http://conlonnovak.com//portfolio/teach-tiles/</link>
-      <pubDate>Sat, 17 Sep 2016 06:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//portfolio/teach-tiles/</guid>
-      <description>Impact: Designing for Future Educational Technologies   Key Concepts: Augmented Reality, Educational Technology
+Inspired by the vulnerability of traditional communication infrastructure to widespread natural disaster, Babble is a chat platform that is able to be installed, setup, and used 100% offline.</description></item><item><title>Teach Tiles</title><link>/portfolio/teach-tiles/</link><pubDate>Sat, 17 Sep 2016 06:00:00 -0500</pubDate><guid>/portfolio/teach-tiles/</guid><description>Impact: Designing for Future Educational Technologies Key Concepts: Augmented Reality, Educational Technology
 Tools: Unity, Vuforia Mixed Reality API
 Roles: User Experience Designer, Graphic Designer, Videographer, Video Editor
 Duration: 24 hours during HackCMU 2016
 Team Members: Tom Wildenhain and Benjamin Johnson-Staub
-TeachTiles is both a really interesting design concept and an excellent example of how low- and mid-fidelity prototypes can be developed quickly, while still yielding meaningful engagement and feedback from people.</description>
-    </item>
-    
-  </channel>
-</rss>
+TeachTiles is both a really interesting design concept and an excellent example of how low- and mid-fidelity prototypes can be developed quickly, while still yielding meaningful engagement and feedback from people.</description></item></channel></rss>
