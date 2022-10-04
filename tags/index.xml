@@ -9,15 +9,6 @@
     <copyright>© {year} Conlon Novak.</copyright>
     <lastBuildDate>Sun, 13 Sep 2020 12:00:00 -0500</lastBuildDate><atom:link href="http://conlonnovak.com//tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>bash-scripting</title>
-      <link>http://conlonnovak.com//tags/bash-scripting/</link>
-      <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/bash-scripting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hackathon</title>
       <link>http://conlonnovak.com//tags/hackathon/</link>
       <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
@@ -32,15 +23,6 @@
       <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
       
       <guid>http://conlonnovak.com//tags/team/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>videography</title>
-      <link>http://conlonnovak.com//tags/videography/</link>
-      <pubDate>Sun, 13 Sep 2020 12:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/videography/</guid>
       <description></description>
     </item>
     
@@ -92,36 +74,9 @@
     <item>
       <title>activism</title>
       <link>http://conlonnovak.com//tags/activism/</link>
-      <pubDate>Wed, 17 Jun 2020 05:00:00 -0500</pubDate>
+      <pubDate>Fri, 17 Jul 2020 05:00:00 -0500</pubDate>
       
       <guid>http://conlonnovak.com//tags/activism/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cuba</title>
-      <link>http://conlonnovak.com//tags/cuba/</link>
-      <pubDate>Tue, 05 May 2020 09:30:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/cuba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ethnographic-research</title>
-      <link>http://conlonnovak.com//tags/ethnographic-research/</link>
-      <pubDate>Tue, 05 May 2020 09:30:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/ethnographic-research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>internet-access</title>
-      <link>http://conlonnovak.com//tags/internet-access/</link>
-      <pubDate>Tue, 05 May 2020 09:30:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/internet-access/</guid>
       <description></description>
     </item>
     
@@ -135,15 +90,6 @@
     </item>
     
     <item>
-      <title>a11y</title>
-      <link>http://conlonnovak.com//tags/a11y/</link>
-      <pubDate>Thu, 19 Sep 2019 08:30:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/a11y/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>design-jam</title>
       <link>http://conlonnovak.com//tags/design-jam/</link>
       <pubDate>Thu, 19 Sep 2019 08:30:00 -0500</pubDate>
@@ -153,29 +99,11 @@
     </item>
     
     <item>
-      <title>pitch</title>
-      <link>http://conlonnovak.com//tags/pitch/</link>
-      <pubDate>Thu, 19 Sep 2019 08:30:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/pitch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>appdev</title>
-      <link>http://conlonnovak.com//tags/appdev/</link>
-      <pubDate>Tue, 10 Sep 2019 12:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/appdev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>15-112-term-project</title>
-      <link>http://conlonnovak.com//tags/15-112-term-project/</link>
+      <title>15-122-term-project</title>
+      <link>http://conlonnovak.com//tags/15-122-term-project/</link>
       <pubDate>Thu, 08 Dec 2016 12:00:00 -0500</pubDate>
       
-      <guid>http://conlonnovak.com//tags/15-112-term-project/</guid>
+      <guid>http://conlonnovak.com//tags/15-122-term-project/</guid>
       <description></description>
     </item>
     
@@ -185,15 +113,6 @@
       <pubDate>Thu, 08 Dec 2016 12:00:00 -0500</pubDate>
       
       <guid>http://conlonnovak.com//tags/gamedev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>edutech</title>
-      <link>http://conlonnovak.com//tags/edutech/</link>
-      <pubDate>Sat, 17 Sep 2016 06:00:00 -0500</pubDate>
-      
-      <guid>http://conlonnovak.com//tags/edutech/</guid>
       <description></description>
     </item>
     

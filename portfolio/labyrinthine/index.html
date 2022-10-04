@@ -3,11 +3,6 @@
 
 <head>
   <script src="https://kit.fontawesome.com/ef9948053d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.typekit.net/vum3ceh.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <title>Labyrinthine | Conlon Novak</title>
 
   <meta charset="UTF-8">
@@ -38,7 +33,7 @@
     <link type="text/css" rel="stylesheet" href="/css/post.min.c1a4883a7bddf3137976b400ece7dbfdd8b9d97cd1b757d14d89cb0bbdc4076f.css" integrity="sha256-waSIOnvd8xN5drQA7Ofb/di52XzRt1fRTYnLC73EB28="/>
   
     
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.7477d80dac685c5d7bb53ad62a262afad25997acd1f52a8fb35e7dfbd9786eda.css" integrity="sha256-dHfYDaxoXF17tTrWKiYq&#43;tJZl6zR9SqPs159&#43;9l4bto="/>
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.02306041826b0b155e04acc2f95501e34fd02387958a3c10a966eac9e86be1ff.css" integrity="sha256-AjBgQYJrCxVeBKzC&#43;VUB40/QI4eVijwQqWbqyehr4f8="/>
   
   
    
@@ -88,19 +83,16 @@ if (!doNotTrack) {
     
     
       <li>
-        <a  href="/">Home</a>
+        <a  href="/">about</a>
       </li>
     
       <li>
-        <a  href="/about/">About</a>
-      </li>
-    
-      <li>
-        <a  href="/portfolio/">Portfolio</a>
+        <a  class="active"
+         href="/portfolio">portfolio</a>
       </li>
     
     <li>
-        <a href="/conlon_novak_resume.pdf" target="_blank">Resume</a>
+        <a href="/conlon_novak_resume.pdf" target="_blank">resume</a>
     </li>
     <li>
     	<label class="switch" title="Switch between dark and light mode.">
@@ -122,6 +114,13 @@ if (!doNotTrack) {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+.preload * {
+ -webkit-transition: none !important;
+ -moz-transition: none !important;
+ -ms-transition: none !important;
+ -o-transition: none !important;
 }
 
  
@@ -150,7 +149,7 @@ if (!doNotTrack) {
 }
 
 input:checked + .slider {
-  background-color: #4e7abd;
+  background-color: #9013fe;
 }
 
 input:focus + .slider {
@@ -254,21 +253,12 @@ input:checked + .slider:before {
           <article class="post__content">
               
 <hr>
-<h2 id="impact-developing-a-flexible-game-engine">Impact: Developing a Flexible Game Engine<a class="anchor" href="#impact-developing-a-flexible-game-engine">#</a></h2>
 <br>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/iqMgLBrZQNk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p><strong>Key Concepts:</strong> Game Design, Raycasting, 2.5D Rendering, Procedural Generation, Optimization</p>
-<p><strong>Tools:</strong> Python, PyGame</p>
-<p><strong>Roles:</strong> Developer, QA Tester, Player</p>
-<p><strong>Duration:</strong> 7 weeks, term project for Fundamentals of Programming and Computer Science (15-112)</p>
-<p>Labyrinthine is a game built on a simple, custom ray-casting game engine that takes a 2D list of coordinates (for wall placement) and flat image textures (of the walls and the skybox) and turns them into 3D-ish environments by “propping up” these flat objects at different distances from the player. The player&rsquo;s view is simulated by drawing larger or smaller slices of the textures on the screen (using PyGame&rsquo;s blitting functions) return the proper scaling of texture slices based on “cast” rays. Using the distance and angle to triangulate the size of the distant object creates a 3D-like effect (termed 2.5D) that is well known from games such as Doom and Quake.</p>
-<p>Labyrinthine, its maze generation algorithm, and its engine are not the most polished or noteworthy projects on their own merits, but represent to me the vast amount of opportunity that programming and design can encompass when paired and allowed to shine. They don&rsquo;t live up to that promise — not even close, but the project did begin me on my journey to study Human-Computer Interaction, so I wanted to pay it the respect it deserves here.</p>
-<p><a href="https://devpost.com/software/labyrinthine" target="_blank" class="portfolio-link">View Labyrinthine on DevPost<i class="fas fa-external-link-alt"></i></a></p>
-<p><a href="https://github.com/ConlonNovak/Labyrinthine" target="_blank" class="portfolio-link">View Labyrinthine on GitHub<i class="fas fa-external-link-alt"></i></a></p>
 
 
               
@@ -278,10 +268,10 @@ input:checked + .slider:before {
 <ul class="tags__list">
     
     <li class="tag__item">
-        <a class="tag__link" href="http://conlonnovak.com//tags/gamedev/">gamedev</a>
+        <a class="tag__link" href="http://conlonnovak.com//tags/15-122-term-project/">15-122-term-project</a>
     </li>
     <li class="tag__item">
-        <a class="tag__link" href="http://conlonnovak.com//tags/15-112-term-project/">15-112-term-project</a>
+        <a class="tag__link" href="http://conlonnovak.com//tags/gamedev/">gamedev</a>
     </li></ul>
 
  <div class="pagination">

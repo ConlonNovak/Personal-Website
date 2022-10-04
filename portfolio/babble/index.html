@@ -3,11 +3,6 @@
 
 <head>
   <script src="https://kit.fontawesome.com/ef9948053d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.typekit.net/vum3ceh.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <title>Babble | Conlon Novak</title>
 
   <meta charset="UTF-8">
@@ -38,7 +33,7 @@
     <link type="text/css" rel="stylesheet" href="/css/post.min.c1a4883a7bddf3137976b400ece7dbfdd8b9d97cd1b757d14d89cb0bbdc4076f.css" integrity="sha256-waSIOnvd8xN5drQA7Ofb/di52XzRt1fRTYnLC73EB28="/>
   
     
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.7477d80dac685c5d7bb53ad62a262afad25997acd1f52a8fb35e7dfbd9786eda.css" integrity="sha256-dHfYDaxoXF17tTrWKiYq&#43;tJZl6zR9SqPs159&#43;9l4bto="/>
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.02306041826b0b155e04acc2f95501e34fd02387958a3c10a966eac9e86be1ff.css" integrity="sha256-AjBgQYJrCxVeBKzC&#43;VUB40/QI4eVijwQqWbqyehr4f8="/>
   
   
    
@@ -88,19 +83,16 @@ if (!doNotTrack) {
     
     
       <li>
-        <a  href="/">Home</a>
+        <a  href="/">about</a>
       </li>
     
       <li>
-        <a  href="/about/">About</a>
-      </li>
-    
-      <li>
-        <a  href="/portfolio/">Portfolio</a>
+        <a  class="active"
+         href="/portfolio">portfolio</a>
       </li>
     
     <li>
-        <a href="/conlon_novak_resume.pdf" target="_blank">Resume</a>
+        <a href="/conlon_novak_resume.pdf" target="_blank">resume</a>
     </li>
     <li>
     	<label class="switch" title="Switch between dark and light mode.">
@@ -122,6 +114,13 @@ if (!doNotTrack) {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+.preload * {
+ -webkit-transition: none !important;
+ -moz-transition: none !important;
+ -ms-transition: none !important;
+ -o-transition: none !important;
 }
 
  
@@ -150,7 +149,7 @@ if (!doNotTrack) {
 }
 
 input:checked + .slider {
-  background-color: #4e7abd;
+  background-color: #9013fe;
 }
 
 input:focus + .slider {
@@ -254,21 +253,12 @@ input:checked + .slider:before {
           <article class="post__content">
               
 <hr>
-<h2 id="impact-prototyping-for-emergency-situations">Impact: Prototyping for Emergency Situations<a class="anchor" href="#impact-prototyping-for-emergency-situations">#</a></h2>
 <br>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/-rpm7h61Jr0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p><strong>Key Concepts:</strong> Near-Field Communications, Android Beam, Point-to-Point Wi-Fi, Offline Communications, Emergency Response</p>
-<p><strong>Tools:</strong> Java, MongoDB, Android Studio, iMovie</p>
-<p><strong>Roles:</strong> Database Architect, App Developer, Video Editor</p>
-<p><strong>Duration:</strong> 48 hours during PennApps XVIII</p>
-<p><strong>Awards:</strong> Top 30 Hack, Lutron IoT Prize, Best Use of MongoDB Stitch, Best Hack for Resilience - Wharton Risk Center</p>
-<p><strong>Team Members:</strong> Aneek Mukherjee and Emmanuel Eppinger</p>
-<p>Inspired by the vulnerability of traditional communication infrastructure to widespread natural disaster, Babble is a chat platform that is able to be installed, setup, and used 100% offline. This platform would be able to maintain communications in disaster situations where Internet infrastructure is damaged or sabotaged, or simply where Internet connectivity is limited or prohibitively expensive.</p>
-<p>To install the app from another phone, simply touch the two together to transmit the .apk file to the other phone in under a minute. While offline, messages are sent directly from device to device via m to n peer to peer connectivity. Additionally, sent messages can be daisy chained from peer to peer to peer to peer, and so on. Each device keeps a localized ledger of all messages that it has sent and received, as well as an amalgamation of all of the ledgers of every device it has communicated with, allowing for messages to propagate across mesh networks well beyond the range of any one device. Syncing these ledgers to the cloud when connection is restored allows these ledges to be uploaded and parsed through by first responders by phone number or GPS coordinates.</p>
 <br>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -281,8 +271,23 @@ input:checked + .slider:before {
   <iframe src="https://www.youtube.com/embed/M5dz9_pf2pU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p><a href="https://devpost.com/software/pennapps18-2pjcx0" target="_blank" class="portfolio-link">View Babble on DevPost<i class="fas fa-external-link-alt"></i></a></p>
-<p><a href="https://www.mongodb.com/blog/post/hacking-for-resilience-with-mongodb-stitch-at-pennapps-xviii" target="_blank" class="portfolio-link">MongoDB blog post about Babble<i class="fas fa-external-link-alt"></i></a></p>
+<p>SUBMITTED TO
+PennApps XVIII</p>
+<p>WINNER Top 30 Hack
+WINNER Lutron IoT Prize
+WINNER Best Use of MongoDB Stitch
+WINNER PennApps Route | Best Hack for Resilience (Wharton Risk Center)</p>
+<p><a href="https://devpost.com/software/pennapps18-2pjcx0" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>View Babble on DevPost</a>
+</p>
+<p><a href="https://www.mongodb.com/blog/post/hacking-for-resilience-with-mongodb-stitch-at-pennapps-xviii" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>MongoDB blog post about Babble</a>
+</p>
+<p>Team Members: Aneek Mukherjee and Emmanuel Eppinger</p>
 
 
               
@@ -291,12 +296,6 @@ input:checked + .slider:before {
 
 <ul class="tags__list">
     
-    <li class="tag__item">
-        <a class="tag__link" href="http://conlonnovak.com//tags/appdev/">appdev</a>
-    </li>
-    <li class="tag__item">
-        <a class="tag__link" href="http://conlonnovak.com//tags/videography/">videography</a>
-    </li>
     <li class="tag__item">
         <a class="tag__link" href="http://conlonnovak.com//tags/hackathon/">hackathon</a>
     </li>
